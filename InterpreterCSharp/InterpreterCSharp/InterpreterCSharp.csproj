@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Source\controller\Controller.cs" />
     <Compile Include="Source\domain\adts\ArrayDictionary.cs" />
     <Compile Include="Source\domain\adts\ArrayList.cs" />
     <Compile Include="Source\domain\adts\ArrayStack.cs" />
@@ -58,8 +59,20 @@
     <Compile Include="Source\domain\expressions\IExpression.cs" />
     <Compile Include="Source\domain\expressions\NotExpression.cs" />
     <Compile Include="Source\domain\expressions\ReadExpression.cs" />
+    <Compile Include="Source\domain\expressions\ReadHeapExpression.cs" />
+    <Compile Include="Source\domain\expressions\VariableExpression.cs" />
     <Compile Include="Source\domain\ProgramState.cs" />
+    <Compile Include="Source\domain\statements\AssignmentStatement.cs" />
+    <Compile Include="Source\domain\statements\CompoundStatement.cs" />
+    <Compile Include="Source\domain\statements\IfStatement.cs" />
+    <Compile Include="Source\domain\statements\IfThenStatement.cs" />
     <Compile Include="Source\domain\statements\IStatement.cs" />
+    <Compile Include="Source\domain\statements\NewStatement.cs" />
+    <Compile Include="Source\domain\statements\PrintStatement.cs" />
+    <Compile Include="Source\domain\statements\SkipStatement.cs" />
+    <Compile Include="Source\domain\statements\SwitchStatement.cs" />
+    <Compile Include="Source\domain\statements\WhileStatement.cs" />
+    <Compile Include="Source\domain\statements\WriteHeapStatement.cs" />
     <Compile Include="Source\exceptions\controller\ControllerException.cs" />
     <Compile Include="Source\exceptions\domain\ArrayOverflowException.cs" />
     <Compile Include="Source\exceptions\domain\DivisionByZeroException.cs" />
@@ -69,10 +82,13 @@
     <Compile Include="Source\exceptions\domain\InputException.cs" />
     <Compile Include="Source\exceptions\domain\KeyNotFoundException.cs" />
     <Compile Include="Source\exceptions\InterpreterException.cs" />
+    <Compile Include="Source\exceptions\repository\InvalidProgramIndexException.cs" />
     <Compile Include="Source\exceptions\repository\RepositoryException.cs" />
     <Compile Include="Source\exceptions\view\ViewException.cs" />
     <Compile Include="Source\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\repository\IRepository.cs" />
+    <Compile Include="Source\repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
